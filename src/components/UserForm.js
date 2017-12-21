@@ -34,19 +34,19 @@ export default class UserForm extends React.Component {
                 </div>
                 <div className="btn">
                     <div className="btn1"></div>
-                    <a href="javascript:void(0)" onClick={this.submit.bind(this, 'Random')}>Random User</a>
+                    <a onClick={this.submit.bind(this, 'Random')}>Random User</a>
                     {(() => {
                         if(formType === "add"){
                             return (
-                                <a href="javascript:void(0)" onClick={this.submit.bind(this, 'Save')}>Save</a>
+                                <a onClick={this.submit.bind(this, 'Save')}>Save</a>
                             );
                         } else if(formType === "Modify"){
                             return (
-                                <a href="javascript:void(0)" onClick={this.submit.bind(this, 'Modify')}>Modify</a>
+                                <a onClick={this.submit.bind(this, 'Modify')}>Modify</a>
                             )
                         }
                     })()}
-                    <a href="javascript:void(0)" onClick={this.submit.bind(this, 'Cancel')}>Cancel</a>
+                    <a onClick={this.submit.bind(this, 'Cancel')}>Cancel</a>
                 </div>
             </div>
         );

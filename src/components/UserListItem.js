@@ -16,8 +16,8 @@ export default class UserListItem extends React.Component {
                 <div className="userListLiGender">Gender: <strong>{data.Gender}</strong></div>
                 <div className="btn">
                     <div className="btn1"></div>
-                    <a href="javascript:void(0)" onClick={this.editSubmit.bind(this, 'Delete', index)}>Delete</a>
-                    <a href="javascript:void(0)" onClick={this.editSubmit.bind(this, 'Modify', index)}>Edit</a>
+                    <a onClick={this.editSubmit.bind(this, 'Delete', index)}>Delete</a>
+                    <a onClick={this.editSubmit.bind(this, 'Modify', index)}>Edit</a>
                 </div>
             </div>
         );
